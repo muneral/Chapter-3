@@ -18,7 +18,7 @@ public class RotationPropertyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rotation_property);
-
+//方式1
         ObjectAnimator animator = ObjectAnimator.ofFloat(findViewById(R.id.image_view),
                 "rotation", 0, 360);
         animator.setRepeatCount(ValueAnimator.INFINITE);
@@ -26,7 +26,7 @@ public class RotationPropertyActivity extends AppCompatActivity {
         animator.setDuration(8000);
         animator.setRepeatMode(ValueAnimator.RESTART);
         animator.start();
-
+//方式2     res/animator/rotate.xml
 //        Animator animator = AnimatorInflater.loadAnimator(this, R.animator.rotate);
 //        animator.setTarget(findViewById(R.id.image_view));
 //        animator.start();

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--静态使用-->
     <fragment
         android:id="@+id/hello_fragment"
         android:name="com.example.chapter3.demo.fragment.HelloFragment"

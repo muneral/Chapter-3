@@ -18,7 +18,7 @@ public class ScalePropertyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scale_property);
-
+//方式1
 //        View imageView = findViewById(R.id.image_view);
 //        ObjectAnimator scaleXAnimator = ObjectAnimator.ofFloat(imageView,
 //                "scaleX", 1.1f, 0.9f);
@@ -37,7 +37,7 @@ public class ScalePropertyActivity extends AppCompatActivity {
 //        AnimatorSet animatorSet = new AnimatorSet();
 //        animatorSet.playTogether(scaleXAnimator, scaleYAnimator);
 //        animatorSet.start();
-
+     //方式2   res/animator/breath.xml
         Animator animator = AnimatorInflater.loadAnimator(this, R.animator.breath);
         animator.setTarget(findViewById(R.id.image_view));
         animator.start();
